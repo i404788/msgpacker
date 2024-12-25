@@ -142,7 +142,7 @@ mod alloc {
 
     impl<X> Unpackable for Vec<X>
     where
-        X: Unpackable + Ord,
+        X: Unpackable,
     {
         type Error = <X as Unpackable>::Error;
 
